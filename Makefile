@@ -1,5 +1,5 @@
 PROJECT_NAME := $(shell gcloud config get-value project)
-BUCKET_NAME :=
+BUCKET_NAME := ${PROJECT_NAME}-test-fluentd-gcs
 LOG_INTEVAL =
 export
 

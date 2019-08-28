@@ -20,6 +20,16 @@ Fluentd の Google Cloud Storage の出力プラグインのテストサンプ�
 make install
 ```
 
+## Bucket 名
+Bucket 名は全世界で一意である必要があります。
+そのため、デフォルトではプロジェクト名を入れて一意なバケット名になるようになっています。
+もしこの動作が問題がある場合は、Makefile を書き換えるか、
+makefile の起動時に名前を変更してください。
+
+```
+make fluentd BUCKET_NAME=your-bucket-name
+```
+
 ## ローカルでプログラムを fluentd とテストする方法
 ```bash
 make fluentd
