@@ -1,4 +1,5 @@
 PROJECT_NAME := $(shell gcloud config get-value project)
+BUCKET_NAME :=
 LOG_INTEVAL =
 export
 
@@ -17,4 +18,8 @@ fluentd:
 clean:
 	-rm -rf *.log*
 	-rm -rf country
+
+# GCS
+list:
+	gsutil ls -r gs://${BUCKET_NAME}
 
