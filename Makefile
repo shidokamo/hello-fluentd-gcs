@@ -1,5 +1,6 @@
+PROJECT_NAME := $(shell gcloud config get-value project)
 LOG_INTEVAL =
-export LOG_INTERVAL
+export
 
 default:build push
 
