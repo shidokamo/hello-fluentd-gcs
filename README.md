@@ -41,3 +41,9 @@ make log                  # Max rate log injection
 * fluentd がログローテートを検出しながらデータを取り込みます。
 * 設定された、`flush_interval` の間隔で GCS にファイルを書き込みます。
 
+## GCS のデバッグ
+```
+make list  # Bucket 内のファイルがリストされます。
+cp r gs://xxxxxx . # Bucket をコピーします。
+make delete
+```

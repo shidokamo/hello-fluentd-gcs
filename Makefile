@@ -22,4 +22,6 @@ clean:
 # GCS
 list:
 	gsutil ls -r gs://${BUCKET_NAME}
+rm:
+	gsutil rm -r gs://${BUCKET_NAME}
 
