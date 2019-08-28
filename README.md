@@ -45,5 +45,5 @@ make log                  # Max rate log injection
 ```
 make list  # Bucket 内のファイルがリストされます。
 cp r gs://xxxxxx . # Bucket をコピーします。
-make delete
+make rm
 ```
