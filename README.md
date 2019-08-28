@@ -22,7 +22,7 @@ make install
 
 ## ローカルでプログラムを fluentd とテストする方法
 ```bash
-fluentd -c ./fluent.conf
+make fluentd
 
 # Open another terminal
 make log LOG_INTERVAL=1   # Slow rate log injection
